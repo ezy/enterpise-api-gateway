@@ -1,0 +1,9 @@
+/dist
+/logs
+/npm-debug.log
+/node_modules
+.DS_Store
+.env*
+hs_err*
+/junk*
+.db

@@ -1,0 +1,21 @@
+version: '3.6'
+
+services:
+  gateway_default:
+    restart: always
+    build:
+      context: .
+    env_file: .env.development
+    volumes:
+      - .:/app
+      - /app/node_modules/
+    ports:
+      - "8081:8081"
+    depends_on:
+      - gateway_postgres
+    command: npm run dev
+
+  gateway_postgres:
+    image: postgres:11
+    volumes:
+      - ".db:/var/lib/postgresql/data"
