@@ -1,6 +1,6 @@
 # Node API Gateway
 
-An API gateway with an inbuilt OAuth2 server that will run in a docker container, authenticate against an LDAP server returning JWT and refresh tokens, then generates routes to proxy from `src/config.js` to the target URL.
+A super lightweight API gateway (825 lines of code) with an inbuilt OAuth2 server that will run in a docker container, authenticate against an LDAP server returning JWT and refresh tokens, then generates routes to proxy from `src/config.js` to the target URL.
 
 ## Installation
 
